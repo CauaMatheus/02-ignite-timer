@@ -6,6 +6,7 @@ import { HistoryContainer, HistoryList, Status } from './styles'
 
 export function History() {
   const { cycles } = useContext(CyclesContext)
+
   return (
     <HistoryContainer>
       <h1>Meu Histórico</h1>
@@ -39,7 +40,7 @@ export function History() {
                   status = 'Finalizado'
                   color = 'green'
                 }
-                const distance = formatDistanceToNow(startDate, {
+                const distance = formatDistanceToNow(new Date(startDate), {
                   addSuffix: true,
                   locale: ptBR,
                 })

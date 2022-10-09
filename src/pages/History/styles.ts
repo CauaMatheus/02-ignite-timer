@@ -18,6 +18,13 @@ export const HistoryList = styled.div`
   overflow: auto;
 
   margin-top: 2rem;
+  max-height: 20rem;
+  overflow-y: auto;
+
+  thead {
+    position: sticky;
+    top: 0;
+  }
 
   table {
     width: 100%;
